@@ -1,0 +1,6 @@
+[submodule "simple-webpage"]
+	path = simple-webpage
+	url = https://github.com/aididalam/simple-webpage
+[submodule "simple-gitops"]
+	path = simple-gitops
+	url = https://github.com/aididalam/simple-gitops
