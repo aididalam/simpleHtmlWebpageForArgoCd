@@ -23,13 +23,7 @@ simpleHtmlWebpageForArgoCd/
 
 ## Setup
 
-### 1. Create KIND cluster
-
-```bash
-kind create cluster --config kind-cluster.yaml
-```
-
-### 2. Install ArgoCD
+### 1. Install ArgoCD
 
 ```bash
 kubectl create namespace argocd
@@ -74,6 +68,5 @@ make TAG=v1.0.0
 
 ## Key lessons learned
 
-- KIND port mapping: `hostPort` on the KIND config must match the `nodePort` on the Kubernetes Service
 - ArgoCD needs a GitHub token (not password) to access private repos
 - Mac M1 is `arm64` — Docker images must be built with `--platform linux/arm64` or multi-arch (`linux/amd64,linux/arm64`)
